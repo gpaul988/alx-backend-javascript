@@ -1,4 +1,7 @@
-/* Graham S. PAul- 4-pricing.js */
+/**
+ * Graham S. Paul- 4-pricing.js
+ * eslint-disable
+ * */
 import Currency from './3-currency';
 
 export default class Pricing {
