@@ -1,4 +1,8 @@
 export default class HolbertonCourse {
+/**
+ * Author - Graham S. Paul 
+ * 2-hbtn_course.js
+ */
   constructor(name, length, students) {
     if (typeof name !== 'string') {
       throw TypeError('name must be a String');
