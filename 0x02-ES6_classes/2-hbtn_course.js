@@ -1,3 +1,7 @@
+/**
+ * Author - Graham S. Paul
+ * 2-hbtn_course.js
+ */
 export default class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
