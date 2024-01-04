@@ -1,3 +1,4 @@
+/* Graham S. Paul - 9-hoisting.js */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
