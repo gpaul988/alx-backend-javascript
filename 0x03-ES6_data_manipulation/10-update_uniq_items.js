@@ -1,3 +1,7 @@
+/**
+ * Author: Graham S. Paul
+ * 10-update_uniq_items.js
+ */
 export default function updateUniqueItems(groceries) {
   if (!(groceries instanceof Map)) {
     throw Error('Cannot process');
