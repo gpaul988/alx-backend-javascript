@@ -1,3 +1,4 @@
+/* Graham S. Paul - 8-clean_set.js */
 export default function cleanSet(set, startString) {
   const parts = [];
   if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
@@ -14,4 +15,3 @@ for (const value of set.values()) {
   }
   return parts.join('-');
 }
-/* Graham S. Paul - 8-clean_set.js */ 
