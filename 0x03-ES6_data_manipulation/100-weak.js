@@ -1,3 +1,7 @@
+/**
+ * Author: Graham S. Paul
+ * 100-weak.js
+ */
 export const weakMap = new WeakMap();
 export function queryAPI(endpoint) {
   if (!weakMap.has(endpoint)) {
