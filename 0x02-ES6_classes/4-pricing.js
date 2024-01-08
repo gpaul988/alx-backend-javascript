@@ -1,6 +1,7 @@
 /* eslint-disable */
 import Currency from './3-currency';
 
+/* Graham S. Paul - 4-pricing.js */
 export default class Pricing {
   constructor(amount, currency) {
     this._amount = amount;
