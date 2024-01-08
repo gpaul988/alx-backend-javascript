@@ -1,7 +1,3 @@
-/**
- * Author: Graham S. Paul
- * 8-clean_set.js
- */
 export default function cleanSet(set, startString) {
   const parts = [];
   if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
