@@ -1,3 +1,7 @@
+/**
+ * Author: Graham S. Paul
+ * 4-update_grade_by_city.js
+ */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   if (!Array.isArray(students)) {
     return [];
