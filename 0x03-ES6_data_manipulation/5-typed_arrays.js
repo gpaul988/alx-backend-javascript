@@ -1,3 +1,7 @@
+/**
+ * Author: Graham S. Paul
+ * 5-typed_arrays.js
+ */
 export default function createInt8TypedArray(length, position, value) {
   if (position < 0 || position >= length) {
     throw Error('Position outside range');
