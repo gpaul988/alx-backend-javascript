@@ -1,11 +1,8 @@
 # My Readme for 0x04.TypeScript
 This project contains tasks for learning to use TypeScript.
-
 ## Author:
 + [x] Graham S. Paul
-
 ## Tasks To Complete
-
 + [x] 0. **Creating an interface for a student**<br/>[task_0/js/main.ts](task_0/js/main.ts) contains a script that meets the following requirements:
   + Write an interface named `Student` that accepts the following elements: `firstName(string)`, `lastName(string)`, `age(number)`, and `location(string)`.
   + Create two students, and create an array named `studentsList` containing the two variables.
@@ -13,24 +10,20 @@ This project contains tasks for learning to use TypeScript.
   + Each row should contain the first name of the student and the location.
   + When running, Webpack should return `No type errors found`.
   + Every variable should use TypeScript when possible.
-
 + [x] 1. **Let's build a Teacher interface**<br/>[task_1/js/main.ts](task_1/js/main.ts) contains a script that meets the following requirements:
   + `firstName(string)` and `lastName(string)`. These two attributes should only be modifiable when a Teacher is first initialized.
   + `fullTimeEmployee(boolean)` this attribute should always be defined.
   + `yearsOfExperience(number)` this attribute is optional.
   + `location(string)` this attribute should always be defined.
   + Add the possibility to add any attribute to the Object like `contract(boolean)` without specifying the name of the attribute.
-
 + [x] 2. **Extending the Teacher class**<br/>[task_1/js/main.ts](task_1/js/main.ts) contains the following updates:
   + Write an interface named `Directors` that extends `Teacher`. It requires an attribute named `numberOfReports(number)`.
-
 + [x] 3. **Printing teachers**<br/>[task_1/js/main.ts](task_1/js/main.ts) contains the following updates:
   + Write a function `printTeacher`:
     + It accepts two arguments `firstName` and `lastName`.
     + It returns the first letter of the `firstName` and the full `lastName`.
     + Example: `printTeacher("John", "Doe") -> J. Doe`.
   + Write an interface for the function named `printTeacherFunction`.
-
 + [x] 4. **Writing a class**<br/>[task_1/js/main.ts](task_1/js/main.ts) contains the following updates:
   + Write a Class named `StudentClass`:
     + The constructor accepts `firstName(string)` and `lastName(string)` arguments.
@@ -40,7 +33,6 @@ This project contains tasks for learning to use TypeScript.
     + The class should be described through an Interface.
     + When running `npm run build`, no TypeScript error should be displayed.
     + Every variable should use TypeScript when possible.
-
 + [x] 5. **Advanced types Part 1**<br/>[task_2/js/main.ts](task_2/js/main.ts) contains a script that meets the following requirements:
   + Create the `DirectorInterface` interface with the 3 expected methods:
     + `workFromHome()` returning a string.
@@ -63,7 +55,6 @@ This project contains tasks for learning to use TypeScript.
     + It accepts 1 arguments:
       + `salary`(either number or string).
     + If `salary` is a number and less than 500 - It should return a new `Teacher`. Otherwise it should return a `Director`.
-
 + [x] 6. **Creating functions specific to employees**<br/>[task_2/js/main.ts](task_2/js/main.ts) contains the following updates:
   + Write a function `isDirector`:
     + It accepts `employee` as an argument.
@@ -72,14 +63,12 @@ This project contains tasks for learning to use TypeScript.
     + It accepts `employee` as an argument.
     + If the employee is a `Director`, it will call `workDirectorTasks`.
     + If the employee is a `Teacher`, it will call `workTeacherTasks`.
-
 + [x] 7. **String literal types**<br/>[task_2/js/main.ts](task_2/js/main.ts) contains the following updates:
   + Write a String literal type named `Subjects` that allows a variable to have the value `Math` or `History` only.
   + Write a function named `teachClass`:
     + It takes `todayClass` as an argument.
     + It will return the string `Teaching Math` if `todayClass` is `Math`.
     + It will return the string `Teaching History` if `todayClass` is `History`.
-
 + [x] 8. **Ambient Namespaces**
   + [task_3/js/interfaces.ts](task_3/js/interfaces.ts) contains a script that meets the following requirements:
     + Export a type `RowID` and set it equal to `number`.
@@ -93,15 +82,12 @@ This project contains tasks for learning to use TypeScript.
       console.log('Insert row', row);
       return Math.floor(Math.random() * Math.floor(1000));
     }
-
     export function deleteRow(rowId) {
       console.log('Delete row id', rowId);
       return;
     }
-
     export function updateRow(rowId, row) {
       console.log(`Update row ${rowId}`, row);
-
       return rowId;
     }
     ```
@@ -118,7 +104,6 @@ This project contains tasks for learning to use TypeScript.
     + Create a `const` variable named `newRowID` with the type `RowID` and assign it the value of the `insertRow` command.
     + Next, create a `const` variable named `updatedRow` with the type `RowElement` and update `row` with an age field set to `23`.
     + Finally, call the `updateRow` and `deleteRow` commands.
-
 + [x] 9. **Namespace & Declaration merging**
   + [task_4/js/subjects/Teacher.ts](task_4/js/subjects/Teacher.ts) contains a script that meets the following requirements:
     + Export a `Teacher` interface in a namespace named `Subjects`.
@@ -145,7 +130,6 @@ This project contains tasks for learning to use TypeScript.
     + In the class, write a method named `getRequirements` that will return a string `Here is the list of requirements for Java`.
     + Write a method named `getAvailableTeacher` that will return a string `Available Teacher: <first name of teacher>`.
     + If the teacher doesn't have any experience in teaching Java, then the method should return a string `No available teacher`.
-
 + [x] 10. **Update task_4/js/main.ts**<br/>[task_4/js/main.ts](task_4/js/main.ts) contains the following updates:
   + Create and export a constant `cpp` for Cpp Subjects.
   + Create and export a constant `java` for Java Subjects.
@@ -154,7 +138,6 @@ This project contains tasks for learning to use TypeScript.
   + For Cpp subject, log to the console `C++`, set `cTeacher` as the teacher, call the two methods `getRequirements` and `getAvailableTeacher` and print the strings they return.
   + For Java subject, log to the console `Java`, set `cTeacher` as the teacher, call the two methods `getRequirements` and `getAvailableTeacher`, and print the strings they return.
   + For React subject, log to the console `React`, set `cTeacher` as the teacher, call the two methods `getRequirements` and `getAvailableTeacher`, and print the strings they return.
-
 + [x] 11. **Brand convention & Nominal typing**<br/>[task_5/js/main.ts](task_5/js/main.ts) contains a script that meets the following requirements:
   + Create two interfaces `MajorCredits` and `MinorCredits`:
     + Each interface defines a number named `credits`.
