@@ -5,6 +5,11 @@ const app = express();
 const PORT = 1245;
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
+/**
+ * Creates a more complex HTTP server using Express
+ * Recreate the small HTTP server using Express.
+ * @author Graham S. Paul <gpaul988@gmail.com>
+ */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
     reject(new Error('Cannot load the database'));
