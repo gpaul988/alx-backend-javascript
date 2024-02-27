@@ -1,25 +1,14 @@
 const http = require('http');
 
-/**
- * To create small HTTP server using Node's HTTP module
- * Creating small HTTP server using Node's HTTP module
- * @author Graham S. Paul <gpaul988@gmail.com>
- */
-const PORT = 1245;
-const HOST = 'localhost';
-const app = http.createServer();
+const hostname = '127.0.0.1';
+const port = 1245;
 
-app.on('request', (_, res) => {
-  const responseText = 'Hello Holberton School!';
-
-  res.setHeader('Content-Type', 'text/plain');
-  res.setHeader('Content-Length', responseText.length);
+const app = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.write(Buffer.from(responseText));
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello Holberton School!');
 });
 
-app.listen(PORT, HOST, () => {
-  process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
-});
+app.listen(port, hostname);
 
 module.exports = app;
