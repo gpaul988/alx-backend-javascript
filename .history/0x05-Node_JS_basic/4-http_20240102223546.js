@@ -1,10 +1,5 @@
 const http = require('http');
 
-/**
- * @author Graham S. Paul
- * Creating a simple http server
- * that returns a message "Hello Holberton School!"
- */
 const hostname = '127.0.0.1';
 const port = 1245;
 

@@ -1,11 +1,5 @@
 const http = require('http');
 
-/**
- * @author Graham S. Paul`
- * Creating a complex http server
- * that is assigned to the variable app
- * and listens to port 1245, and also return plan text
- */
 const students = require('./3-read_file_async');
 
 const hostname = '127.0.0.1';

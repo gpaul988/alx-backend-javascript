@@ -1,16 +1,12 @@
 const fs = require('fs');
 
-/**
- * @author Graham S. Paul
- * Function that counts the number of students in a database
- */
-async function countStudents(path) {
-  let data;
-  try {
-    data = await fs.promises.readFile(path, 'utf8');  
-  } catch (error) {
-    throw new Error('Cannot load the database');
+function countStudents(path) {
+  if (!fs.existsSync(path)) {
+    throw Error('Cannot load the database');
   }
+  // block other parallel process
+  // and do the current file reading process
+  const data = fs.readFileSync(path, 'utf8');
   const students = data.split('\n')
     .map((student) => student.split(','))
     .filter((student) => student.length === 4 && student[0] !== 'firstname')
@@ -29,7 +25,6 @@ async function countStudents(path) {
   console.log(`Number of students: ${students.length}`);
   console.log(`Number of students in CS: ${csStudents.length}. List: ${csStudents.join(', ')}`);
   console.log(`Number of students in SWE: ${sweStudents.length}. List: ${sweStudents.join(', ')}`);
-  return { students, csStudents, sweStudents };
 }
 
 module.exports = countStudents;
