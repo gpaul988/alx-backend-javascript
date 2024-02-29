@@ -1,3 +1,11 @@
+/**
+ * Calculate the number
+ * @param {string} type - Type of calculation
+ * @param {number} a - First number
+ * @param {number} b - Second number
+ * @returns {number} - Result of the calculation
+ * @author Graham S. Paul
+ */
 const Utils = {
   calculateNumber(type, a, b) {
     if (type === 'SUM') {
