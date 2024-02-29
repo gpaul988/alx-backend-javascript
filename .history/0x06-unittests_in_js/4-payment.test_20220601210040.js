@@ -1,15 +1,8 @@
-const sendPaymentRequestToApi = require('./4-payment');
 const sinon = require('sinon');
-const { expect } = require('chai');
 const Utils = require('./utils');
+const { expect } = require('chai');
+const sendPaymentRequestToApi = require('./4-payment');
 
-/**
- * Send payment request to API
- * @param {number} totalAmount - Total amount
- * @param {number} totalShipping - Total shipping
- * @returns {undefined}
- * @author Graham S. Paul
- */
 describe('sendPaymentRequestToApi', () => {
   it('sendPaymentRequestToApi calls console.log with the right arguments', () => {
     const bigBrother = sinon.spy(console);
