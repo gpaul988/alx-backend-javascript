@@ -1,6 +1,17 @@
-const request = require('request');
 const { expect } = require('chai');
+const request = require('request');
 
+/**
+ * Deep equality & Post integration testing
+ * @returns {string} - Welcome message
+ * @example GET / should return Welcome to the payment system
+ * @example GET /cart/:id should return Payment methods for cart :id
+ * @example GET /cart/:id should return 404 for negative number values in :id
+ * @example GET /cart/:id should return 404 for non-numeric values in :id
+ * @example POST /login should return Welcome :username
+ * @example GET /available_payments should return { payment_methods: { credit_cards: true, paypal: false } }
+ * @author Graham S. Paul
+ */
 describe('API integration test', () => {
   const API_URL = 'http://localhost:7865';
 

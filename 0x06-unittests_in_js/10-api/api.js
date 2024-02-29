@@ -1,8 +1,13 @@
 const express = require('express');
 
-const app = express();
 const PORT = 7865;
+const app = express();
 
+/**
+ * Deep equality & Post integration testing
+ * @returns {string} - Welcome message
+ * @author Graham S. Paul
+ */
 app.use(express.json());
 
 app.get('/', (_req, res) => {
