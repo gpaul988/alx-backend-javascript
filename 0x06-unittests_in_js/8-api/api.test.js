@@ -1,6 +1,12 @@
-const request = require('request');
 const { expect } = require('chai');
+const request = require('request');
 
+/**
+ * API integration test
+ * @returns {undefined}
+ * @example GET / returns correct response
+ * @author Graham S. Paul
+ */
 describe('API integration test', () => {
   const API_URL = 'http://localhost:7865';
 
