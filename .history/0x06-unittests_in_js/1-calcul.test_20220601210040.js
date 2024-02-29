@@ -1,14 +1,6 @@
-const calculateNumber = require('./1-calcul');
 const assert = require('assert');
+const calculateNumber = require('./1-calcul');
 
-/**
- * combining descriptions
- * @param {string} type first argument of the function
- * @param {number} a second argument of the function
- * @param {number} b third argument of the function
- * @returns {number} the sum of a and b
- * @authror Graham S. Paul
- */
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
     it('equal positive numbers', () => {
