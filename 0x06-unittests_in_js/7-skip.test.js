@@ -1,5 +1,10 @@
 const { expect } = require('chai');
 
+/**
+ * Testing numbers
+ * @returns {undefined}
+ * @author Graham S. Paul
+ */
 describe('Testing numbers', () => {
   it('1 is equal to 1', () => {
     expect(1 === 1).to.be.true;
