@@ -1,15 +1,7 @@
-const sendPaymentRequestToApi = require('./5-payment');
-const { expect } = require('chai');
 const sinon = require('sinon');
+const { expect } = require('chai');
+const sendPaymentRequestToApi = require('./5-payment');
 
-/**
- * Send payment request to API
- * @param {number} totalAmount - Total amount
- * @param {number} totalShipping - Total shipping
- * @returns {undefined}
- * @author Graham S. Paul
- * 
- */
 describe('sendPaymentRequestToApi', () => {
   let bigBrother;
 
