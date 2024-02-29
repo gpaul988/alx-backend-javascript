@@ -1,14 +1,6 @@
-const calculateNumber = require('./2-calcul_chai');
 const { expect } = require('chai');
+const calculateNumber = require('./2-calcul_chai');
 
-/**
- * Basic test using Chai assertion library
- * @param {string} type - Type of operation
- * @param {number} a - First operand
- * @param {number} b - Second operand
- * @returns 0
- * @author Graham S. Paul
- */
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
     it('equal positive numbers', () => {

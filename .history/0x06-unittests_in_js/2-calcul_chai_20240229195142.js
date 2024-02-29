@@ -4,7 +4,7 @@
  * @param {number} a - First operand
  * @param {number} b - Second operand
  * @returns 0
- * @author Graham S. Paul
+ * @authror Graham S. Paul
  */
 const calculateNumber = (type, a, b) => {
   if (type === 'SUM') {
