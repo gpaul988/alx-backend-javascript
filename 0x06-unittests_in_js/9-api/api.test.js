@@ -1,6 +1,14 @@
-const request = require('request');
 const { expect } = require('chai');
+const request = require('request');
 
+/**
+ * Regex integration testing
+ * @returns {string} - Welcome message
+ * @example GET / should return Welcome to the payment system
+ * @example GET /cart/:id should return Payment methods for cart :id
+ * @example GET /cart/:id should return 404 for negative number values in :id
+ * @author Graham S. Paul
+ */
 describe('API integration test', () => {
   const API_URL = 'http://localhost:7865';
 
